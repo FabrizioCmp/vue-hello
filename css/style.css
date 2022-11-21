@@ -2,57 +2,66 @@ body {
     background-color: antiquewhite;
 }
 
-h1{
+h1 {
     margin: 5rem 0;
     font-size: 5rem;
     font-weight: 700;
     position: relative;
-    left: -1100px;
-    transition: all .5s;   
+    left: -60vw;
+    transition: all .5s;
 }
-img{
+
+img {
     display: block;
     width: 500px;
     position: relative;
     opacity: 0;
     transition: all 1s;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: ;
+    left: 35%;
+    transform:  rotate(0);
+    animation: saluto 2s infinite linear;
 }
 
-button{
+button {
     margin-top: 5rem;
     background-color: brown;
     color: antiquewhite;
     font-size: 4rem;
     padding: 1rem 3rem;
     border-radius: 40px;
-    border: 4px solid black; 
+    border: 4px solid black;
     box-shadow: 3px 3px 10px black;
     transition: transform .4s;
-    
 }
 
-#app{
+#app {
     text-align: center;
 }
 
-.show_text{
+.show_text {
     left: 0;
 }
 
-.show_img{
+.show_img {
     opacity: 1;
 }
 
 /********* EFFECTS  *********/
 
-button:hover{
+button:hover {
     transform: scale(1.2);
 }
 
-button:active{
+button:active {
     background-color: antiquewhite;
     color: brown;
+}
+
+@keyframes saluto {
+    0%,100%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
 }

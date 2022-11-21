@@ -13,7 +13,7 @@ createApp({
         btnClick: function () {
             console.log("btn clicked");
             this.textClass = "show_text";
-            this.imgHand = "imgs/hi.png";
+            this.imgHand = "imgs/hello.png";
             this.imgClass = "show_img";
         }
     }
